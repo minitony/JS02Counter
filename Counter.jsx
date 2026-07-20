@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Counter = ({ initialValue }) => {
+const Counter = ({ initialValue = 0 }) => {
+  const [count, setCount] = useState(initialValue);
   return <div>
-    <p>Count: {initialValue}</p>
+    <p>Count: {count}</p>
   </div>;
 };
 
