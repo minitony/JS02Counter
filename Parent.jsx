@@ -6,6 +6,9 @@ const Parent = ({ initialValue = 0 }) => {
     <div>
       <h2>Parent Component</h2>
       <Counter initialValue={initialValue} />
+      <Counter initialValue={initialValue+1} />
+      {new Date().toISOString().slice(0, 19)
+      .replace('T', ' ')} (Parent)
     </div>
   );
 };
