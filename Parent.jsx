@@ -1,10 +1,11 @@
 import React from 'react';
 import Counter from './Counter';
 
-const Parent = () => {
+const Parent = ({ initialValue = 0 }) => {
   return (
     <div>
-      <Counter initialValue={0} />
+      <h2>Parent Component</h2>
+      <Counter initialValue={initialValue} />
     </div>
   );
 };
